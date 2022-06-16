@@ -3,10 +3,12 @@ header {
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .navigator {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -38,19 +40,19 @@ header {
 
   &.curent {
     position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $buttonColor;
+    }
   }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 40px;
-}
-
-.curent::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $buttonColor;
 }

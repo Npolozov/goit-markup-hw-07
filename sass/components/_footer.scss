@@ -73,12 +73,8 @@
   &:hover,
   &:focus {
     border-color: $buttonColor;
+    color: $buttonColor;
   }
-}
-
-.footer-mail-input:hover,
-.footer-mail-input:focus {
-  border-color: $textTitleColor;
 }
 
 .footer-mail input::placeholder {
@@ -87,6 +83,10 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  &:hover {
+    color: $buttonColor;
+  }
 }
 
 .icon-form {

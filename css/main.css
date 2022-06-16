@@ -6,6 +6,17 @@
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__list, .feature__list, .company__list, .about__list, .social__list, .contact-footer, .site-nav, .contact__list, .buttons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -29,17 +40,6 @@ h6,
 p {
   padding: 0;
   margin: 0;
-}
-
-.team__list, .feature__list, .company__list, .about__list, .contact-footer, .site-nav, .social__list, .buttons-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 img {
@@ -125,7 +125,7 @@ img {
   text-align: center;
 }
 
-.social__list {
+.contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,11 +135,11 @@ img {
           align-items: center;
 }
 
-.site__item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site__link {
+.contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,11 +157,11 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site__link:hover, .site__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: #2196f3;
 }
 
-.site__icon {
+.contact__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -194,12 +194,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-nav {
@@ -236,12 +242,7 @@ header {
 .site-nav__link.curent {
   position: relative;
 }
-
-.site-nav__item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.curent::after {
+.site-nav__link.curent::after {
   position: absolute;
   content: "";
   left: 0;
@@ -250,6 +251,10 @@ header {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer {
@@ -337,11 +342,7 @@ header {
 }
 .form_input:hover, .form_input:focus {
   border-color: #2196f3;
-}
-
-.footer-mail-input:hover,
-.footer-mail-input:focus {
-  border-color: #212121;
+  color: #2196f3;
 }
 
 .footer-mail input::-webkit-input-placeholder {
@@ -382,6 +383,21 @@ header {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail input::-webkit-input-placeholder:hover {
+  color: #2196f3;
+}
+.footer-mail input::-moz-placeholder:hover {
+  color: #2196f3;
+}
+.footer-mail input:-ms-input-placeholder:hover {
+  color: #2196f3;
+}
+.footer-mail input::-ms-input-placeholder:hover {
+  color: #2196f3;
+}
+.footer-mail input::placeholder:hover {
+  color: #2196f3;
 }
 
 .icon-form {
