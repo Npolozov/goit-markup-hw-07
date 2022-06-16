@@ -342,65 +342,80 @@ header {
 }
 .form_input:hover, .form_input:focus {
   border-color: #2196f3;
-  color: #2196f3;
 }
 
-.footer-mail input::-webkit-input-placeholder {
+.form_input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail input::-moz-placeholder {
+.form_input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail input:-ms-input-placeholder {
+.form_input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail input::-ms-input-placeholder {
+.form_input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail input::placeholder {
+.form_input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-mail input::-webkit-input-placeholder:hover {
-  color: #2196f3;
-}
-.footer-mail input::-moz-placeholder:hover {
-  color: #2196f3;
-}
-.footer-mail input:-ms-input-placeholder:hover {
-  color: #2196f3;
-}
-.footer-mail input::-ms-input-placeholder:hover {
-  color: #2196f3;
-}
-.footer-mail input::placeholder:hover {
+
+.form_input:hover::-webkit-input-placeholder, .form_input:focus::-webkit-input-placeholder {
   color: #2196f3;
 }
 
-.icon-form {
+.form_input:hover::-moz-placeholder, .form_input:focus::-moz-placeholder {
+  color: #2196f3;
+}
+
+.form_input:hover:-ms-input-placeholder, .form_input:focus:-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.form_input:hover::-ms-input-placeholder, .form_input:focus::-ms-input-placeholder {
+  color: #2196f3;
+}
+
+.form_input:hover::placeholder,
+.form_input:focus::placeholder {
+  color: #2196f3;
+}
+
+.icon_form {
   margin-left: 10px;
   fill: currentColor;
 }
