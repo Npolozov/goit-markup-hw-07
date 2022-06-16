@@ -29,6 +29,17 @@
   margin: 0 auto;
 }
 
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  @extend %list;
+}
+.buttons-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-portfolio {
   padding: 6px 22px;
   color: $textTitleColor;

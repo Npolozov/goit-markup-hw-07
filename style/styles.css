@@ -68,14 +68,6 @@ img {
 }
 
 /* Logo */
-header {
-  border-bottom: 1px solid #ececec;
-}
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   display: block;
   color: var(--text-title-color);
@@ -96,12 +88,20 @@ header {
   color: var(--accent-color);
 }
 
+/* Site-nav */
+header {
+  border-bottom: 1px solid #ececec;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .navigator {
   display: flex;
   align-items: center;
 }
 
-/* Site-nav */
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -125,12 +125,10 @@ header {
 }
 
 .site-nav__link:hover,
-.site-nav__link:focus,
-.contact-footer .link:hover,
-.contact-footer .link:focus {
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.curent {
+.site-nav__link.curent {
   color: var(--accent-color);
 }
 
