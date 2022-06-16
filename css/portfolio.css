@@ -31,7 +31,7 @@ p {
   margin: 0;
 }
 
-.navigator {
+.list-projects, .contact-footer, .site-nav, .social__list, .buttons-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -125,7 +125,7 @@ img {
   text-align: center;
 }
 
-.site-contact {
+.social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,11 +135,11 @@ img {
           align-items: center;
 }
 
-.site-contact__item:not(:last-child) {
+.site__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-contact__link {
+.site__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,11 +157,11 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-contact__link:hover, .site-contact__link:focus {
+.site__link:hover, .site__link:focus {
   color: #2196f3;
 }
 
-.site-contact__icon {
+.site__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -194,18 +194,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navigator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .site-nav {
@@ -340,6 +334,9 @@ header {
   outline: none;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form_input:hover, .form_input:focus {
+  border-color: #2196f3;
 }
 
 .footer-mail-input:hover,

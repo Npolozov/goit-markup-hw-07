@@ -1,13 +1,14 @@
-.site-contact {
+.social__list {
   display: flex;
   margin-left: auto;
   align-items: center;
+  @extend %list;
 }
-.site-contact__item:not(:last-child) {
+.site__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-contact__link {
+.site__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -27,7 +28,7 @@
   }
 }
 
-.site-contact__icon {
+.site__icon {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;

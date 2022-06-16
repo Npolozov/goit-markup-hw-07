@@ -5,6 +5,7 @@
 .team__list {
   display: flex;
   flex-direction: row;
+  @extend %list;
 }
 
 .team__item {

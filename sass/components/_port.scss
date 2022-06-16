@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+  @extend %list;
 }
 
 .list-projects__item {

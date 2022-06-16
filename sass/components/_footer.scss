@@ -9,6 +9,10 @@
   align-items: baseline;
 }
 
+.contact-footer {
+  @extend %list;
+}
+
 .contact-footer__address {
   font-style: normal;
   text-decoration: none;
@@ -65,6 +69,11 @@
   color: rgba(255, 255, 255, 0.6);
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $buttonColor;
+  }
 }
 
 .footer-mail-input:hover,
