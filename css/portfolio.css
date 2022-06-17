@@ -101,6 +101,7 @@ img {
 }
 
 .button-portfolio {
+  font-weight: 500;
   padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
@@ -566,7 +567,7 @@ header {
 
 body {
   background-color: white;
-  color: var(--primary-text-color);
+  color: #757575;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -638,6 +639,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 63px 24px;
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-projects__link:hover .position-background {
+  opacity: 1;
 }
 
 .position-paragraf {
